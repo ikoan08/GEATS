@@ -9,4 +9,3 @@ services:
     tty: true
     ports:
       - "5555:5555"
-    command: yarn dev
