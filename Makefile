@@ -14,6 +14,7 @@ exec:
 	docker-compose exec node sh
 
 dev:
+	docker-compose run --rm node yarn install
 	docker-compose exec node yarn dev
 
 lint:
