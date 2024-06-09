@@ -1,0 +1,35 @@
+# Nodeモジュール
+node_modules/
+
+# ビルド出力
+build/
+
+# 依存関係ファイル
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# 環境変数ファイル
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ログファイル
+logs
+*.log
+
+# エディタやIDEの設定ファイル
+.vscode/
+.idea/
+
+# 一時ファイル
+*.swp
+*.tmp
+*.temp
+*~
+
+# OS固有のファイル
+.DS_Store
+Thumbs.db
