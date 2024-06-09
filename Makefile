@@ -10,5 +10,14 @@ start:
 stop:
 	docker-compose down
 
+exec:
+	docker-compose exec node sh
+
 dev:
 	docker-compose exec node yarn dev
+
+lint:
+	docker-compose exec node yarn lint
+
+lint/fix:
+	make lint --fix
