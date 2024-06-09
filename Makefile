@@ -20,4 +20,5 @@ lint:
 	docker-compose exec node yarn lint
 
 lint/fix:
-	make lint --fix
+	docker-compose exec node yarn lint --fix
+	docker-compose exec node yarn format
