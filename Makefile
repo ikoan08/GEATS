@@ -14,10 +14,12 @@ exec:
 	docker-compose exec node sh
 
 dev:
+	docker-compose run --rm node yarn install
 	docker-compose exec node yarn dev
 
 lint:
 	docker-compose exec node yarn lint
 
 lint/fix:
-	make lint --fix
+	docker-compose exec node yarn lint --fix
+	docker-compose exec node yarn format
