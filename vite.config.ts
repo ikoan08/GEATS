@@ -10,6 +10,6 @@ export default defineConfig({
       usePolling: true,
     },
   },
-  base: process.env.GITHUB_PAGES ? 'REPOSITORY_NAME' : './',
+  base: process.env.GITHUB_PAGES ? "REPOSITORY_NAME" : "./",
   plugins: [react()],
 });
