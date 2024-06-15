@@ -29,7 +29,8 @@ jobs:
         run: yarn eslint .
 
       - name: Run Prettier
-        run: yarn prettier --check \"./**/*.{js,jsx,json,css,scss,ts,tsx}\"
+        run: |
+          yarn prettier --check "**/*.{js,jsx,json,css,scss,ts,tsx}"
 
   jest:
     runs-on: ubuntu-latest
