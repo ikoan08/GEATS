@@ -3,6 +3,7 @@ node_modules/
 
 # ビルド出力
 build/
+dist/
 
 # 依存関係ファイル
 npm-debug.log
