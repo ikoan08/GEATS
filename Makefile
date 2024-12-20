@@ -1,14 +1,17 @@
-compose/build:
+build:
 	docker-compose build
 
-compose/install:
+install:
 	docker-compose run --rm node yarn install
 
 start:
 	docker-compose up -d
 
-stop:
+down:
 	docker-compose down
+
+_delete-all:
+	docker-compose down --rmi all --volumes --remove-orphans
 
 exec:
 	docker-compose exec node sh
