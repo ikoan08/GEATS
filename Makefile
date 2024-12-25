@@ -21,8 +21,10 @@ dev:
 	docker-compose exec node yarn dev
 
 lint:
-	docker-compose exec node yarn lint
+	docker-compose exec node yarn biome lint
 
-lint/fix:
-	docker-compose exec node yarn lint --fix
-	docker-compose exec node yarn format
+format:
+	docker-compose exec node yarn biome format
+
+fix:
+	docker-compose exec node yarn biome check --write
